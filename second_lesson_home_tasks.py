@@ -32,7 +32,7 @@ import random
 # Isprime(n)
 
 #5
-# summ = 0
+# sum = 0
 # n = int(input("insert number: "))
 # if n < 1:
 #     print("value < 1 could not be calculated: ")
