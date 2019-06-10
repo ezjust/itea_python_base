@@ -29,7 +29,7 @@ import random
 #
 #
 # n = int(input("insert number: "))
-# Isprime(n)
+# is_prime(n)
 
 #5
 # sum = 0
@@ -49,10 +49,10 @@ import random
 #     print(cstr.center(n*2, " "))
 
 #7
-# a, b = list(map(int, input("Insert two values separated by comma: ").split(',')))
+# a, b = map(int, input("Insert two values separated by comma: ").split(','))
 # if a < b:
 #     print(a,b)
-#     ran = random.randint(int(a),int(b))
+#     ran = random.randint(a,b)
 #     guess = int(input("please try to guess value set: "))
 #     for i in range(a,b):
 #         if ran == guess:
