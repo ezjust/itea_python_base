@@ -37,7 +37,7 @@ import random
 # if n < 1:
 #     print("value < 1 could not be calculated: ")
 # else:
-#     for i in range(1,(n+1)):
+#     for i in range(1, n+1):
 #         if n % i == 0:
 #             summ += i
 #     print("sum of all devidors: ", summ)
