@@ -21,7 +21,7 @@ import random
 #     val=val*val
 #     print(val*val)
 #4
-# def Isprime(n):
+# def is_prime(n):
 #     if (math.factorial(n - 1) + 1) % n != 0:  # Теорема Вильсона
 #         print('NO it is not prime number')
 #     else:
