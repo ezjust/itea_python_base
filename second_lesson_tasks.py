@@ -25,7 +25,7 @@ import time
 #4
 # a="This is Hard timE fOr ouR countrY"
 # for i in a:
-#     if i.isupper() is True:
+#     if i.isupper():
 #         print(i, end='')
 
 #5
