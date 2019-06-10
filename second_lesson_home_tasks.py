@@ -39,8 +39,8 @@ import random
 # else:
 #     for i in range(1, n+1):
 #         if n % i == 0:
-#             summ += i
-#     print("sum of all devidors: ", summ)
+#             sum += i
+#     print("sum of all devidors: ", sum)
 
 #6
 # n = int(input("insert number of lines: "))
@@ -60,10 +60,8 @@ import random
 #             break
 #         elif ran > guess:
 #             guess = int(input("your value is lower then random one, try again: "))
-#             continue
 #         else:
 #             guess = int(input("your value is greater then random one, try again: "))
-#             continue
 # elif a > b:
 #     print("You have inserted bad values: {} > {} . Retry with integers".format(a, b,))
 # else:
