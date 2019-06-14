@@ -9,11 +9,10 @@ import time
 
 #2
 # a=0
-# while a<=1000:
+# while a*a<=1000:
 #     a+=1
 #     i=a*a
-#     if i<1000:
-#         print(i)
+#     print(i)
 
 #3
 # a=input("put the value:" ) #to make one and more itterations running, put the value that is more than 100
@@ -25,7 +24,7 @@ import time
 #4
 # a="This is Hard timE fOr ouR countrY"
 # for i in a:
-#     if i.isupper() is True:
+#     if i.isupper():
 #         print(i, end='')
 
 #5

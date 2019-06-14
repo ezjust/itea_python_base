@@ -21,7 +21,7 @@ import random
 #     val=val*val
 #     print(val*val)
 #4
-# def Isprime(n):
+# def is_prime(n):
 #     if (math.factorial(n - 1) + 1) % n != 0:  # Теорема Вильсона
 #         print('NO it is not prime number')
 #     else:
@@ -29,30 +29,30 @@ import random
 #
 #
 # n = int(input("insert number: "))
-# Isprime(n)
+# is_prime(n)
 
 #5
-# summ = 0
+# sum = 0
 # n = int(input("insert number: "))
 # if n < 1:
 #     print("value < 1 could not be calculated: ")
 # else:
-#     for i in range(1,(n+1)):
+#     for i in range(1, n+1):
 #         if n % i == 0:
-#             summ += i
-#     print("sum of all devidors: ", summ)
+#             sum += i
+#     print("sum of all devidors: ", sum)
 
 #6
 # n = int(input("insert number of lines: "))
-# for i in range(1,(n+1)):
+# for i in range(1, n+1):
 #     cstr = i * "/\\"
 #     print(cstr.center(n*2, " "))
 
 #7
-# a, b = list(map(int, input("Insert two values separated by comma: ").split(',')))
+# a, b = map(int, input("Insert two values separated by comma: ").split(','))
 # if a < b:
 #     print(a,b)
-#     ran = random.randint(int(a),int(b))
+#     ran = random.randint(a,b)
 #     guess = int(input("please try to guess value set: "))
 #     for i in range(a,b):
 #         if ran == guess:
@@ -60,10 +60,8 @@ import random
 #             break
 #         elif ran > guess:
 #             guess = int(input("your value is lower then random one, try again: "))
-#             continue
 #         else:
 #             guess = int(input("your value is greater then random one, try again: "))
-#             continue
 # elif a > b:
 #     print("You have inserted bad values: {} > {} . Retry with integers".format(a, b,))
 # else:
