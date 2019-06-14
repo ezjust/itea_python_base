@@ -1,7 +1,7 @@
 import math
 import random
 import time
-'''tasks in lab, Constructions'''
+'''tasks in lab part1 (constructions)'''
 
 #1
 # for i in range(1, 11):
@@ -110,72 +110,19 @@ import time
 
 #2
 
-# def sum_list_val(list):
-#     new_dict = {}
+# def sum_list_val(list, t = 0):
+#     sum_list = []
 #     for i in list:
 #         dig = i % 10
-#         dig2 = i//10
-#         t = dig + dig2
-#         new_dict.update({i : t})
+#         i = i//10
+#         t = dig + i
+#         sum_list.append(t)
 #         print(t, end='; ')
-#     return new_dict
+#     return
 #
+# def sorted_list(list):
+#     print(sorted(list, key=sum_list_val(), reverse=True))
 #
-# def sorted_list():
-#     print("\nSorted list valus by sum of digits: ", sorted(sum_list_val([74,34,55]).keys()))
-# sorted_list()
-
-#3
-# def rand_vals(start, end):
-#     list = []
-#     for i in range(0, 5):
-#         list.append(random.randint(start, end))
-#     return list
-#
-# print("List of random values: ", rand_vals(1,2))
-
-
-#4
-# def num_factorial(value):
-#     if value == 0:
-#         return 1
-#     else:
-#         return value * math.factorial(value-1)
-#
-# print(num_factorial(40))
-
-'''Recursion tasks'''
-#1
-# def sum_dig(list):
-#     list2 = []
-#     for i in list:
-#         sum = (i % 10) + (i // 10)
-#         list2.append(sum)
-#     if len(list) < 2:
-#         print("List was set with 1 element, so used default one, where sum of number equal: ")
-#         sum_dig([33,14,15])
-#     else:
-#         return print(list2)
-#
-# sum_dig([13])
-
-#2
-# n = int(input("insert number: "))
-# for i in range(0,64):
-#     if n == 2**i:
-#         print("YES")
-#         exit()
-# print("NO")
-
-#3
-# list1 = []
-# n = 3456789
-# for dig in reversed(str(n)):
-#     print(dig, end=" ")
-
-
-
-
-
-
+# sum_list_val([74,34,55])
+# sorted_list([14,34,55])
 
