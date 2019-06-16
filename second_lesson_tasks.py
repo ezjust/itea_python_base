@@ -25,7 +25,7 @@ while math.sqrt(int(a)) > 10:
 #4
 a = 'This is Hard timE fOr ouR countrY'
 for i in a:
-    if i.isupper() is True:
+    if i.isupper():
         print(i, end='')
 
 #5
@@ -75,8 +75,6 @@ print('total sum of digits in int is:', t)
 #9
 array = []
 for value in range(0, 10):
-    if value == 0:
-        continue
     if value == 1:
         array.append(value)
     if 1 < value < 3:
@@ -104,12 +102,12 @@ print('cosinus of x is: ', math.cos(x), '\nsinus of x is: ', math.sin(x))
 #1
 
 
-def average_value(list):
+def get_average_value(list):
     average = sum(list)/len(list)
     return print('the average value is: ', int(average))
 
 
-average_value([1, 3, 4, 6, 6])
+get_average_value([1, 3, 4, 6, 6])
 
 #2
 
@@ -125,16 +123,16 @@ def sum_list_values(list):
     return new_dictitonary
 
 
-def sorted_list():
+def sort_list():
     print('\nSorted list values by sum of digits: ', sorted(sum_list_values([74, 34, 55]).keys()))
 
 
-sorted_list()
+sort_list()
 
 #3
 
 
-def random_values(start, end):
+def get_random_values(start, end):
 
     list_1 = []
     for i in range(0, 5):
@@ -142,20 +140,20 @@ def random_values(start, end):
     return list_1
 
 
-print('List of random values: ', random_values(1,2))
+print('List of random values: ', get_random_values(1,2))
 
 
 #4
 
 
-def num_factorial(value):
+def get_num_factorial(value):
     if value == 0:
         return 1
     else:
         return value * math.factorial(value-1)
 
 
-print(num_factorial(40))
+print(get_num_factorial(40))
 
 '''Recursion tasks'''
 #1
@@ -170,7 +168,7 @@ def sum_digits(list_1):
         print('List was set with 1 element, so used default one, where sum of number equal: ')
         sum_dig([33, 14, 15])
     else:
-        return print(list2)
+        return list2
 
 
 sum_digits([13])
@@ -188,10 +186,3 @@ list1 = []
 num = 3456789
 for digit in reversed(str(num)):
     print(digit, end=" ")
-
-
-
-
-
-
-

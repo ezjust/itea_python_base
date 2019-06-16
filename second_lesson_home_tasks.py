@@ -23,9 +23,9 @@ while 0 < value < 100000:
 #4
 def is_prime(num):
     if (math.factorial(num - 1) + 1) % num != 0:
-        print('NO it is not prime number')
+        return ('NO it is not prime number')
     else:
-        print('YES it is prime number')
+        return ('YES it is prime number')
 
 
 num = int(input('insert number: '))
@@ -65,8 +65,3 @@ elif a > b:
     print('You have inserted bad values: {} > {} . Retry with integers'.format(a, b,))
 else:
     print('You have inserted bad values: {} = {} and {} = {} . Retry with integers'.format(a, type(a), b, type(b)))
-
-
-
-
-
