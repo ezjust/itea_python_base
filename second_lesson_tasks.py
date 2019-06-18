@@ -45,6 +45,7 @@ while a in range(0, 20):
 i = int(input('input any int: '))
 v_list = []
 while i != 0:
+    i = int(input('input any int: '))
     v_list.append(i)
     i = int(input('input any int: '))
     if i == 0:
