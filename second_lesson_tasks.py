@@ -47,9 +47,6 @@ v_list = []
 while i != 0:
     i = int(input('input any int: '))
     v_list.append(i)
-    i = int(input('input any int: '))
-    if i == 0:
-        v_list.append(i)
 print('list length: ', (len(v_list)))
 sum = 0
 for num in v_list:
