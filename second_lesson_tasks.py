@@ -45,8 +45,8 @@ while a in range(0, 20):
 i = int(input('input any int: '))
 v_list = []
 while i != 0:
-    v_list.append(i)
     i = int(input('input any int: '))
+    v_list.append(i)
     if i == 0:
         v_list.append(i)
 print('list length: ', (len(v_list)))
@@ -174,15 +174,13 @@ def sum_digits(list_1):
 sum_digits([13])
 
 #2
-number = int(input('insert number: '))
-for i in range(0, 64):
-    if number == 2**i:
-        print("YES")
-        exit()
-print("NO")
+y = 0
+while y**2 < 1000:
+    print('{}² ='.format(y), y**2)
+    y += 1
 
 #3
-list1 = []
+
 num = 3456789
 for digit in reversed(str(num)):
     print(digit, end=" ")
