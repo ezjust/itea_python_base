@@ -129,10 +129,3 @@ for name, phone in dictionary_1.items():
             print('There are same three "{}" digits in a row'.format(phone[0+i]))
             break
 
-
-
-
-
-
-
-
