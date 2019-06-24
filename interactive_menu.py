@@ -1,58 +1,14 @@
-import copy
-
-#1 Build a square
-
-
-def print_rectangle(n, m):
-    for i in range(1, n + 1):
-        for j in range(1, m + 1):
-            if (i == 1 or i == n or
-                    j == 1 or j == m):
-                print("*", end="")
-            else:
-                print(" ", end="")
-
-        print()
-
-print_rectangle(3, 4)
-
-#2 Sum all elements in matrix
-sum = 0
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [8, 7, 6]]
-for raw in matrix:
-    for value in raw:
-        sum += value
-print(sum)
+# Реализовать интерактивное меню с двумя опциями выбора:
+# а) добавление в справочник
+# б) вывод номера телефона по имени
+# в) вывод имени по номеру телефона
+#
+# Пример
+# Add to dict
+# Get telephone
+# Get name
 
 
-#3 Sum right diagonal of matrix
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-counter = -1
-sum = 0
-for raw in matrix:
-    counter += 1
-    for value in raw[counter:]:
-        sum = sum + value
-
-#4 Find out sum of matrix digonals
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-counter = 0
-sum = 0
-for raw in matrix:
-    counter += 1
-    sum += raw[len(raw)-counter] + raw[-1 + counter]
-print('Sum of matrix diagonal =', sum)
-
-#5 Example of list copy
-
-
-def get_list(list):
-    return list
-
-array_1 = [1, 2]
-print(get_list(array_1.copy()))
-
-#6 Interactive menu
 def manage_telephone_book(tel_dictionary):
     print('\n\n---Hello this is telephone book---\n1 - save new item \
     \n2 - show all exist items by name/phone \
@@ -120,12 +76,4 @@ please try again with only 1 or 2")
 
 dictionary_1 = {'Anna': '0934540391', 'Alex': '0501761601'}
 manage_telephone_book(dictionary_1)
-
-#7 Count numbers with same 3 digits in line
-dictionary_1 = ({'Anna': '0934440391', 'Alex': '0501111601'})
-for name, phone in dictionary_1.items():
-    for i in range(0, len(phone) - 2):
-        if phone[0+i] == phone[1+i] == phone[2+i]:
-            print('There are same three "{}" digits in a row'.format(phone[0+i]))
-            break
 
