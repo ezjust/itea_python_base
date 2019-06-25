@@ -1,5 +1,5 @@
 # Напишите программу, которая преобразует строку, в которой записаны слова через “,” в список из этих слов
 
-a = "one, two, three, five, 11, eleven"
-list_a = list(a.split(','))
-print(list_a)
+text = 'one, two, three, five, 11, eleven'
+text_list = list(text.split(','))
+print(text_list)
