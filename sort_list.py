@@ -1,6 +1,5 @@
 # Напишите программу, которая сортирует заданный список из чисел
 
-a = [1, 2, 192, 15]
-a.sort()
-print('sorted a:', a)
-
+list_a = [1, 2, 192, 15]
+list_a.sort()
+print('sorted list_a:', list_a)
