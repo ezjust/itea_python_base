@@ -1,5 +1,5 @@
-# ignore not needed files
+#ignore not needed files
 
 *.pyc
-.idea/
+.idea/ 
 
