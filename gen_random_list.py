@@ -18,6 +18,3 @@ for i in range(0, len(random_list) - 1):
 last_same_counter.append(count_same)
 print(last_same_counter)
 print('Maximum same characters in a row:', max(last_same_counter))
-
-
-

@@ -22,6 +22,3 @@ print(numbers)
 first_sum = sum(numbers[::3])
 second_sum = sum(numbers[1::3])
 third_sum = sum(numbers[2::3])
-
-
-

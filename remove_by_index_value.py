@@ -25,12 +25,5 @@ def remove_by_value(my_list=[1, 4, 5, 17, 4, 6, 8, 16, 5, 5], value=13):
         raise NoValueInList('There is no value = "{}" in provided list'.format(value))
     return new_list
 
+
 print(remove_by_value())
-
-
-
-
-
-
-
-
