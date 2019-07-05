@@ -26,7 +26,7 @@ def manage_telephone_book(tel_dictionary):
             \nphone - insert 1 and press Enter \
             \nname - insert 2 and press Enter:'))
             if search_value == 1:
-                name = input('Serach by name:')
+                name = input('Search by name:')
                 if name:
                     print('the phone number is: {}'.format(tel_dictionary[name]))
                 else:
