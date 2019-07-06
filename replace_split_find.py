@@ -1,32 +1,25 @@
 from my_exceptions import ValueOutOfRange
-
+import re
 # Без использования методов строк, напишите реализацию таких методов строк:
 # replace, split, find. Напишите функцию remove по индексу и по подстроке.
 
 
-def split_string(sentence='this is the string'):
+def split_string(sentence='this is the string', splitter=' '):
     split_values = []
-    tmp = ''
-    for c in sentence:
-        if c == ' ':
-            split_values.append(tmp)
-            tmp = ''
-        else:
-            tmp += c
-    if tmp:
-        split_values.append(tmp)
+    counter = 0
+    for i in range(0, len(sentence)):
+        word = sentence[counter:i]
+        if sentence[i] == splitter:
+            split_values.append(word)
+            counter = i + 1
+    if word and word != ' ':
+        split_values.append(sentence[counter:])
     return split_values
 
 
-def replace_string(input_string='it is the test test test', sub_string='test', matches=2, new_sub_string='result'):
-    result = ''
-    counter = 0
-    new_list = split_string(sentence=input_string)
-    for e in range(0, len(new_list)):
-        if new_list[e] == sub_string and counter < matches:
-            new_list[e] = new_sub_string
-            counter += 1
-        result = result + ' ' + new_list[e]
+def replace_string(input_string='testhello testhello testhell', sub_string='hello', new_sub_string='result'):
+    if sub_string in input_string:
+        result = re.sub(r'{}'.format(sub_string), '{}'.format(new_sub_string), '{}'.format(input_string))
     return str(result)
 
 
@@ -73,3 +66,5 @@ def remove_by_substring(input_string='this istest test', char_remove='e'):
         for e in my_list:
             new_string += e
     return new_string
+
+
