@@ -9,6 +9,6 @@ with open('test1.txt') as file1:
 words = Counter(words_count)
 top5 = words.most_common(5)
 print(top5)
-with open('test1_result.txt', 'w') as result_file:
+with open('testit 1_result.txt', 'w') as result_file:
     for word in top5:
         result_file.write(word[0] + '\n')
