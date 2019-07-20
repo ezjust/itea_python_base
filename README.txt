@@ -8,6 +8,16 @@ integer - age
 list - skills of player(strength, savvy, dribbling)
 dict -  position: GK, salary: 5000$, contract: 3 years
 ---------------------------------------------------------------------------------------------------
+FILES EXPLANATION:
+menu file - main file with menu, that uses all methods and data from files below
+users_manipulations file - consist of functions to manipulate users and their permissions
+players_manipulations_by_classes  file - contain all main classes and methods to manipulate players list
+players.json file - contain info of football team players
+exceptions file - contains custom exceptions
+main_menu_class - contain all logic for menu main file, it uses always during to console usage
+users.pickle - contain modified by pickle info about users, that could not be read by standard text editor, for minimal security
+colored_text file - need to make output text colorful
+---------------------------------------------------------------------------------------------------
 HOW TO AUTHORISE?
 This utility have three permission types
 Admin - have all permissions to all functions
@@ -24,5 +34,4 @@ Add, Remove users - Admin only
 ***************************************************************************************************
 Manipulations with data:
 - it is possible to export data to json
-- is is possible to sirealize and desirealize
----------------------------------------------------------------------------------------------------
+- it is possible to serialize and deserialize
